@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quotes Generator</title>
+    <link rel="preload" as="style" href="style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="card" id="quote-container" hidden>
+      <h1><i class="fas fa-quote-left"></i> <span id="quote"></span></h1>
+      <h2 id="author">Author</h2>
+      <div class="flex">
+        <button class="btn btn-twitter">
+          <i class="fab fa-twitter"></i> Tweet
+        </button>
+        <button class="btn btn-primary">
+          <i class="fas fa-arrow-right"></i> Another one!
+        </button>
+      </div>
+    </div>
+    <div class="loader" id="loader"></div>
+    <script src="app.js"></script>
+  </body>
+</html>
