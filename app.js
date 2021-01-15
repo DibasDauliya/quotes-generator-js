@@ -30,7 +30,7 @@ async function getQuote() {
 function setQuote() {
   const random = Math.floor(Math.random() * resData.length)
   const randomQuote = resData[random]
-  console.log(randomQuote)
+  // console.log(randomQuote)
   UIquote.innerHTML = randomQuote.text
 
   if (randomQuote.author === null) {
